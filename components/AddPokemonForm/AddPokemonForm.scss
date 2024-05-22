@@ -1,0 +1,132 @@
+@import "../../style/colors.scss";
+@import "../../style/fonts";
+
+.AddPokemonMain {
+  margin-bottom: 5rem;
+  @media (max-width: 1600px) {
+    margin: 2rem 2rem 1rem 2rem;
+  }
+}
+
+
+.pokefield {
+  display: flex;
+  flex-direction: column;
+}
+
+.pokeinput {
+  border: solid $border-screen 2px;
+  background-color: transparent;
+  line-height: 3rem;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.PokeScreen {
+  width: 100vw;
+  height: auto;
+  background-color: #c4cfa1;
+  display: flex;
+  flex-direction: row;
+  border: 9px solid $border-screen;
+  padding-left: 20px;
+
+
+  @media only screen and (min-width: 1024px) {
+    width: 80vw;
+    height: 700px;
+  }
+}
+
+.Pokedex-Form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.entered-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.result {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 30px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.Allresults {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  width: 100%;
+}
+
+.entered-data2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    &:not(:last-of-type) {
+      margin: 4px;
+    }
+  }
+}
+
+.entered {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  scrollbar-width: thin;
+  margin: 12px;
+  border: 4px solid $border-screen;
+  @media only screen and (min-width: 1024px) {
+    width: 80vw;
+    height: 650px;
+  }
+}
+
+.BTNX {
+  position: relative;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.BTNX svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: currentColor;
+}
+
+.BTNX:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btns {
+  border: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+  margin-left: 60px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-family: MyFont;
+}

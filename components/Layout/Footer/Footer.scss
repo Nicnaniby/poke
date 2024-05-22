@@ -1,0 +1,22 @@
+@import "style/colors";
+@import "style/fonts";
+
+.footer {
+  background-color: $main-color;
+  color: white;
+
+  .container {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+
+    .copyright {
+      color: white;
+      margin-left: 5px;
+      text-decoration: none;
+      text-align: center;
+    }
+  }
+}

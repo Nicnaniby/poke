@@ -1,0 +1,39 @@
+@import "colors";
+@import "reset";
+@import "fonts";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: MyFont;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.err_msg {
+  color: $main-color;
+  margin-bottom: 1rem;
+}
+
+.notFound {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+}

@@ -1,0 +1,102 @@
+@import "style/colors";
+@import "style/fonts";
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0;
+    background-color: transparent;
+  }
+  70% {
+    opacity: 1;
+    background-color: transparent;
+  }
+}
+
+.poke-screen {
+  position: relative;
+
+
+  .poke-screen-img {
+    margin-top: 32px;
+    max-width: 1024px;
+    border: 9px solid $border-screen;
+  }
+}
+
+.features__container {
+  margin: 30px auto 30px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: $main-color;
+  justify-content: space-around;
+
+  .features__description {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.3px;
+  }
+  .features__title {
+    font-size: 30px;
+    font-weight: 450;
+    line-height: 35px;
+    margin: 30px 0 10px 0;
+  }
+
+  .feature__single {
+    max-width: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    color: $backgroundcolor;
+  }
+}
+
+.icon3,
+.icon2 {
+  width: 100px;
+  height: 100px;
+}
+
+.btn {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: $fonts;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  animation: blink 2s infinite;
+}
+
+.btn__screen1 {
+  top: 50%;
+  @media only screen and (max-width: 639px) {
+    left: calc(70% - 64px);
+  }
+  @media only screen and (min-width: 640px) and (max-width: 1023px) {
+    left: calc(70% - 64px);
+  }
+  @media only screen and (min-width: 1024px) {
+    left: 60%;
+  }
+}
+
+.btn__screen2 {
+  top: 50%;
+  @media only screen and (max-width: 639px) {
+    right: calc(45% - 64px);
+  }
+  @media only screen and (min-width: 640px) and (max-width: 1023px) {
+    right: calc(45% - 64px);
+  }
+  @media only screen and (min-width: 1024px) {
+    left: 40%;
+  }
+}
