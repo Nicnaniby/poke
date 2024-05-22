@@ -5,7 +5,7 @@ const Home = () => {
   return (
       <main>
           <div className="poke-screen">
-              <img src="../../assets/27%20(1).png" className="poke-screen-img" alt={'pokedex-scren'}/>
+              <img src="../../assets/home-screen.png" className="poke-screen-img" alt={'pokedex-scren'}/>
               <NaviBtn to="ListPokemons">
                   <div className="btn btn__screen1">List Pokemons</div>
               </NaviBtn>
@@ -27,7 +27,7 @@ const Home = () => {
                       pewno sprosta oponentowi! <br/> Sprawdź naszą porówynwarkę! </p>
               </div>
               <div className="feature__single">
-                  <img className="icon3" src="../../assets/mystery_24dp_FILL0_wght400_GRAD0_opsz24%20(1).svg"></img>
+                  <img className="icon3" src="../../assets/zoom.svg"></img>
                   <h2 className="features__title">Twoje Pokemony!</h2>
                   <p className="features__description"> Złap je wszystkie! <br/> Sekcja TWOJE POKEMONY pozwoli Ci
                       stworzyć Twoją, unikatową listę pokemon! </p>

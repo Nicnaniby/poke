@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 
 
 
-const exercisePath = "C:\\Users\\maojr\\OneDrive\\Pulpit\\pokes 2";
+const exercisePath = "C:\\Users\\maojr\\poke";
 
 export default defineConfig({
   root: exercisePath,

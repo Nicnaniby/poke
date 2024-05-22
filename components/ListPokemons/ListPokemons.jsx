@@ -13,20 +13,7 @@ const buttonStyle = {
   borderRadius: 4,
 };
 
-const pokeListStyle = {
-  display: "flex",
-  flexDirection: "row",
-  justifyContent: "space-evenly",
-  flexWrap: "wrap",
-  padding: 8,
-  border: "4px solid teal",
-  borderRadius: 4,
-  width: "320px",
-  height: "300px",
-  overflow: "hidden auto",
-  scrollbarWidth: "none",
-  listStyleType: "none",
-};
+
 
 const errorStyle = {
   fontSize: 24,
@@ -188,7 +175,7 @@ const ListPokemons = () => {
                   ? renderDetailedPokemon(detailedPokemon)
                   : "no data"}
             </div>
-            <ul className="pokemon_list" style={pokeListStyle}>
+            <ul id="pokeListStyle">
               {pokemons.map((pokemon, index) => (
                   <li key={index} className="pokemon_item">
                     <h3>{pokemon.name}</h3>
