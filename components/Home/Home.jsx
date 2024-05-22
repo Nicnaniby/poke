@@ -15,13 +15,13 @@ const Home = () => {
           </div>
           <div className="features__container">
               <div className="feature__single">
-                  <img className="icon2" src="../../assets/zoom_in_24dp_FILL0_wght400_GRAD0_opsz24.svg"></img>
+                  <img className="icon2" src="../../assets/zoom_in.svg"></img>
                   <h2 className="features__title">Wyszukaj Pokemony!</h2>
                   <p className="features__description"> Skorzystaj z wyszukiwarki Pokemonów! <br/> Profesor Oak
                       zaprojektował Pokoedex tak abyś w każdym miejscu mógł znaleźć Pokemona, który Cię interesuje! </p>
               </div>
               <div className="feature__single">
-                  <img className="icon2" src="../../assets/compare_24dp_FILL0_wght400_GRAD0_opsz24.svg"></img>
+                  <img className="icon2" src="../../assets/compare.svg"></img>
                   <h2 className="features__title">Porówaj Pokemony!</h2>
                   <p className="features__description"> Upewnij się czy Pokemon, którego chcesz wystawić do walki na
                       pewno sprosta oponentowi! <br/> Sprawdź naszą porówynwarkę! </p>
