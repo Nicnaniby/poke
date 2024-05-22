@@ -13,6 +13,12 @@
   }
 }
 
+.screen-btns {
+  @media only screen and (max-width: 444px) {
+    display: flex;
+    flex-direction: column; }
+}
+
 .poke-screen {
   position: relative;
 
@@ -20,6 +26,10 @@
     margin-top: 32px;
     max-width: 1024px;
     border: 9px solid $border-screen;
+    @media only screen and (min-width: 1024px) {
+      width: 80vw;
+      height: 700px;
+    }
   }
 }
 
@@ -30,6 +40,12 @@
   width: 100%;
   background-color: $main-color;
   justify-content: space-around;
+
+  @media only screen and (max-width: 622px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   .features__description {
     font-size: 24px;
@@ -75,6 +91,9 @@
 }
 
 .btn__screen1 {
+  @media only screen and (max-width: 444px) {
+    top: 50%;
+    right: calc(0% - 64px);}
   top: 50%;
   @media only screen and (max-width: 639px) {
     left: calc(70% - 64px);
@@ -85,9 +104,13 @@
   @media only screen and (min-width: 1024px) {
     left: 60%;
   }
+
 }
 
 .btn__screen2 {
+  @media only screen and (max-width: 444px) {
+    top: 45%;
+    left: calc(55% - 64px);}
   top: 50%;
   @media only screen and (max-width: 639px) {
     right: calc(45% - 64px);
